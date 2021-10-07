@@ -3,7 +3,7 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-weight: 400px;
 	color: #6c7279;
 	background: #ffff;
@@ -14,7 +14,19 @@ body
 	margin: auto;
 	overflow: hidden;
 }
-header
+header {  
+	 min-height: 80px; 
+	  width: 100%;   
+	  background: transparent;  
+	   position: fixed;  
+	    z-index: 15;   
+	    background: white;  
+		border-bottom: solid 3px #3399CC;  
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+	    box-shadow: 0px 6px 6px 0px rgba(118,99,99,0.75);
+	 }
+header2 
 {
 	min-height: 80px;
 	width: 100%;
@@ -29,8 +41,11 @@ header .logo
 }
 header .logo img
 {
-	width: 160px;
-	margin-top: 14px;
+	
+	/*height: 50px;*/
+	width: 40px;
+    margin-bottom: 15px;
+	margin-top: 15px;
 }
 header nav
 {
@@ -64,7 +79,7 @@ header nav ul
 header nav ul li a
 {
 	text-decoration: none;
-	color: #ffffff;
+	color: black /*#ffffff*/;
 	text-transform: uppercase;
 	margin-bottom: 4px;
 	font-weight: bold;
@@ -92,7 +107,7 @@ header nav ul li ul:hover {
 }
 header nav ul li a:hover
 {
-	color: #e81f6b;
+	color: #3399CC;/*#3399CC*/
 }
 
 header nav ul li ul li {
@@ -114,13 +129,375 @@ header nav ul li ul li {
 	background-color: inherit;
 	font-family: inherit; /* Important for vertical align on mobile phones */
 	margin: 0;} /* Important for vertical align on mobile phones */
+#bannerconseiller
+{
+	background: url("Images/conseiller.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 450px;
+}
+#bannerconseiller .shape .content
+	{
+		float: left;
+		margin-left: 10%;
+		margin-top: 200px;
+		position: absolute;
+	}
+#bannerconseiller .shape .content #Quote1
+	{
+		font-size: 15px;
+		color: #aaa7b0;
+	}
+#bannerconseiller .shape .content #Quote3
+	{
+		font-size: 55px;
+		color: #3399CC;
+		font-weight: bold;
+		padding:1px;
+		border-bottom: 2px solid #aaa7b0;
+	}
+#bannerconseiller .shape .content p
+	{
+		margin-top: 25px;
+		width:300px;
+		color: #ffffff;
+		margin-left: 6%;
+		font-size: 20px;
+	}
+#bannerconseiller .shape .content #desk
+	{
+		color: #3399CC /*#3399CC*/;
+		font-style: italic;
+	}
+#bannerconseiller .shape .content form .searchinp
+	{
+		float: left;
+		width: 440px;
+		height: 40px;
+		padding: 10px;
+		outline: none;
+		border: none;
+		border: 1px solid #3399CC;
+		border-radius: 4px 0px 0px 4px;
+		font-size: 15px;
+		color: #fff;
+		background: transparent;
+	}
+#bannerconseiller .shape .content form .btn
+	{
+		position: absolute;
+		width: 55px;
+		height: 40px;
+		margin-left: -2px;
+		text-align: center;
+		font-size: 22px;
+		background: none;
+		background: #3399CC;
+		border: none;
+		outline: none;
+		padding: 2px;
+		border: 1px solid #3399CC;
+		color: #fff;
+		cursor: pointer;
+		border-radius: 0px 4px 4px 0px;
+}
+
+#bannersignin
+{
+	/*background: url("Images/conseiller.png");
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	min-height: 50%;
+}
+#bannersignin .shape .content
+	{
+		float: left;
+		margin-left: 10%;
+		margin-top: 30%;
+		position: absolute;
+	}
+#bannersignin .shape .content #Quote1
+	{
+		font-size: 15px;
+		color: #aaa7b0;
+	}
+#bannersignin .shape .content #Quote3
+	{
+		font-size: 55px;
+		color: #2571c7;
+		font-weight: bold;
+		padding:1px;
+		border-bottom: 2px solid #aaa7b0;
+	}
+#bannersignin .shape .content p
+	{
+		margin-top: 25px;
+		width:300px;
+		color: #ffffff;
+		margin-left: 6%;
+		font-size: 20px;
+	}
+#bannersignin .shape .content #desk
+	{
+		color: #3399CC;
+		font-style: italic;
+	}
+#bannersignin .shape .content form .searchinp
+	{
+		float: left;
+		width: 440px;
+		height: 40px;
+		padding: 10px;
+		outline: none;
+		border: none;
+		border: 1px solid #3399CC;
+		border-radius: 4px 0px 0px 4px;
+		font-size: 15px;
+		color: #fff;
+		background: transparent;
+	}
+#bannersignin .shape .content form .btn
+	{
+		position: absolute;
+		width: 55px;
+		height: 40px;
+		margin-left: -2px;
+		text-align: center;
+		font-size: 22px;
+		background: none;
+		background: #3399CC;
+		border: none;
+		outline: none;
+		padding: 2px;
+		border: 1px solid #3399CC;
+		color: #fff;
+		cursor: pointer;
+		border-radius: 0px 4px 4px 0px;
+}
+
+#banner2
+	{
+		background: url("ressources_site/bannieres/formation_banniere.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 600px;
+	}
+#banner2 .shape .content
+	{
+		float: left;
+		margin-left: 32px;
+		margin-top: 240px;
+		position: absolute;
+	}
+#banner2 .shape .content #Quote1
+	{
+		font-size: 15px;
+		color: #aaa7b0;
+	}
+#banner2 .shape .content #Quote2
+	{
+		font-size: 55px;
+		color: #3399CC /*#3399CC*/;
+		font-weight: bold;
+		padding:1px;
+		border-bottom: 2px solid #aaa7b0;
+	}
+#banner2 .shape .content p
+	{
+		margin-top: 60px;
+		width:600px;
+		color: #ffffff;
+		margin-left: 6%;
+		font-size: 20px;
+	}
+#banner2 .shape .content #desk
+	{
+		color: #3399CC /*#3399CC*/;
+	}
+#banner2 .shape .content form .searchinp
+	{
+		float: left;
+		width: 440px;
+		height: 40px;
+		padding: 10px;
+		outline: none;
+		border: none;
+		border: 1px solid #3399CC;
+		border-radius: 4px 0px 0px 4px;
+		font-size: 15px;
+		color: #fff;
+		background: transparent;
+	}
+#banner2 .shape .content form .btn
+	{
+		position: absolute;
+		width: 55px;
+		height: 40px;
+		margin-left: -2px;
+		text-align: center;
+		font-size: 22px;
+		background: none;
+		background: #3399CC;
+		border: none;
+		outline: none;
+		padding: 2px;
+		border: 1px solid #3399CC;
+		color: #fff;
+		cursor: pointer;
+		border-radius: 0px 4px 4px 0px;
+}
+
+#banneraide
+	{
+		background: url("ressources_site/bannieres/finance_banniere.jpg") no-repeat center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 600px;
+	}
+#banneraide .shape .content
+	{
+		float: left;
+		margin-left: 32px;
+		margin-top: 240px;
+		position: absolute;
+	}
+#banneraide .shape .content #Quote1
+	{
+		font-size: 15px;
+		color: #aaa7b0;
+	}
+#banneraide .shape .content #Quote2
+	{
+		font-size: 55px;
+		color: #3399CC /*#3399CC*/;
+		font-weight: bold;
+		padding:1px;
+		border-bottom: 2px solid #aaa7b0;
+	}
+#banneraide .shape .content p
+	{
+		margin-top: 60px;
+		width:600px;
+		color: #ffffff;
+		margin-left: 6%;
+		font-size: 20px;
+	}
+#banneraide .shape .content #desk
+	{
+		color: #3399CC /*#3399CC*/;
+	}
+#banneraide .shape .content form .searchinp
+	{
+		float: left;
+		width: 440px;
+		height: 40px;
+		padding: 10px;
+		outline: none;
+		border: none;
+		border: 1px solid #3399CC;
+		border-radius: 4px 0px 0px 4px;
+		font-size: 15px;
+		color: #fff;
+		background: transparent;
+	}
+#banneraide .shape .content form .btn
+	{
+		position: absolute;
+		width: 55px;
+		height: 40px;
+		margin-left: -2px;
+		text-align: center;
+		font-size: 22px;
+		background: none;
+		background: #3399CC;
+		border: none;
+		outline: none;
+		padding: 2px;
+		border: 1px solid #3399CC;
+		color: #fff;
+		cursor: pointer;
+		border-radius: 0px 4px 4px 0px;
+}
+
+#bannerlogement
+	{
+		background: url("ressources_site/bannieres/logement_banniere.jpg") no-repeat center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 600px;
+	}
+#bannerlogement .shape .content
+	{
+		float: left;
+		margin-left: 32px;
+		margin-top: 240px;
+		position: absolute;
+	}
+#bannerlogement .shape .content #Quote1
+	{
+		font-size: 15px;
+		color: #aaa7b0;
+	}
+#bannerlogement .shape .content #Quote2
+	{
+		font-size: 55px;
+		color: #3399CC /*#3399CC*/;
+		font-weight: bold;
+		padding:1px;
+		border-bottom: 2px solid #aaa7b0;
+	}
+#bannerlogement .shape .content p
+	{
+		margin-top: 60px;
+		width:600px;
+		color: #ffffff;
+		margin-left: 6%;
+		font-size: 20px;
+	}
+#bannerlogement .shape .content #desk
+	{
+		color: #3399CC /*#3399CC*/;
+	}
+#bannerlogement .shape .content form .searchinp
+	{
+		float: left;
+		width: 440px;
+		height: 40px;
+		padding: 10px;
+		outline: none;
+		border: none;
+		border: 1px solid #3399CC;
+		border-radius: 4px 0px 0px 4px;
+		font-size: 15px;
+		color: #fff;
+		background: transparent;
+	}
+#bannerlogement .shape .content form .btn
+	{
+		position: absolute;
+		width: 55px;
+		height: 40px;
+		margin-left: -2px;
+		text-align: center;
+		font-size: 22px;
+		background: none;
+		background: #3399CC;
+		border: none;
+		outline: none;
+		padding: 2px;
+		border: 1px solid #3399CC;
+		color: #fff;
+		cursor: pointer;
+		border-radius: 0px 4px 4px 0px;
+}
+
 
 #banner
 {
-	background: url("Images/Cover.jpg");
+	background: url("Images/banner.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 900px;
+	min-height: 700px;
 }
 #banner .shape .content
 {
@@ -136,22 +513,23 @@ header nav ul li ul li {
 }
 #banner .shape .content #Quote2
 {
-	font-size: 65px;
-	color: #e81f6b;
+	font-size: 55px;
+	color: #3399CC /*#3399CC*/;
 	font-weight: bold;
-	padding:2px;
+	padding:1px;
 	border-bottom: 2px solid #aaa7b0;
 }
 #banner .shape .content p
 {
-	margin-top: 50px;
+	margin-top: 60px;
 	width:600px;
 	color: #ffffff;
+	margin-left: 6%;
 	font-size: 20px;
 }
 #banner .shape .content #desk
 {
-	color: #e81f6b;
+	color: #3399CC /*#3399CC*/;
 }
 #banner .shape .content form .searchinp
 {
@@ -161,7 +539,7 @@ header nav ul li ul li {
 	padding: 10px;
 	outline: none;
 	border: none;
-	border: 1px solid #e81f6b;
+	border: 1px solid #3399CC;
 	border-radius: 4px 0px 0px 4px;
 	font-size: 15px;
 	color: #fff;
@@ -176,29 +554,31 @@ header nav ul li ul li {
 	text-align: center;
 	font-size: 22px;
 	background: none;
-	background: rgba(232, 31, 107);
+	background: #3399CC /*#3399CC*/;
 	border: none;
 	outline: none;
 	padding: 2px;
-	border: 1px solid #e81f6b;
+	border: 1px solid #3399CC;
 	color: #fff;
 	cursor: pointer;
 	border-radius: 0px 4px 4px 0px;
 }
 #texts
 {
-	min-height: 120px;
-	background: #e81f6b;
+	min-height: 60px;
+	background: #3399CC;
 	text-align: center;
 	color: #ffff;
+	border-radius: 20px solid black;
 }
 #texts .shape h1
 {
 	/* margin-top: 70px;*/
-	font-size: 38px;
+	font-size: 34px;
 	font-weight: normal;
-	padding: 60px;
+	padding: 30px;
 	text-align: center;
+	border-radius: 20px ;
 	/* margin-bottom: -1px;*/
 	/*padding-bottom: 20px;*/
 }
@@ -217,8 +597,17 @@ header nav ul li ul li {
 	text-align: center;
 	color: #2d3134;
 	font-size: 45px;
-	border-bottom: 2px solid #08070a;
+	/*border-bottom: 2px solid #08070a;*/
 	padding-top: 10px;
+}
+
+#Design #Thrends #souligne
+{
+	text-align: center;
+	color: #2d3134;
+	font-size: 45px;
+	padding-top: 10px;
+
 }
 #Design #Thrends p
 {
@@ -256,7 +645,7 @@ header nav ul li ul li {
 	text-align: center;
 	padding-top: 4px;
 	font-size: 23px;
-	color: #e81f6b;
+	color: #3399CC;
 }
 #Design #Thrends .box .titles p
 {
@@ -267,15 +656,15 @@ header nav ul li ul li {
 #Design #Thrends .box .titles a
 {
 	text-decoration: none;
-	color: #e81f6b;
-	border: 1px solid #e81f6b;
+	color: #3399CC;
+	border: 1px solid #3399CC;
 	padding: 8px 14px;
 	transition: 0.5s all;
 }
 #Design #Thrends .box .titles a:hover
 {
 	color: #fff;
-	background: #e81f6b;
+	background: #3399CC;
 }
 #Design #Features
 {
@@ -315,7 +704,7 @@ header nav ul li ul li {
 	height: 50px;
 	width: 80px;
 	font-size: 40px;
-	background: #e81f6b;
+	background: #3399CC;
 	color: #ffffff;
 	margin-left: 132px;
 	border-radius: 2px;
@@ -326,7 +715,7 @@ header nav ul li ul li {
 	height: 230px;
 	margin-left: 11px;
 	margin-top: 7px;
-	border: 4px solid #e81f6b;
+	border: 4px solid #3399CC;
 	border-radius: 2px;
 }
 #Design #Features .bx .innerbx h1
@@ -351,6 +740,7 @@ header nav ul li ul li {
 	height: 530px;
 	width: 1215px;
 	background: #eaeaea;
+	border-bottom:  1px solid black ;
 }
 #about #sidebox .left
 {
@@ -363,6 +753,7 @@ header nav ul li ul li {
 	float: right;
 	width: 634px;
 	height: 530px;
+
 }
 #about #sidebox .left img
 {
@@ -394,17 +785,17 @@ header nav ul li ul li {
 	font-weight: bold;
 	text-decoration: none;
 	margin-left: 80px;
-	color: #e81f6b;
+	color: #3399CC;
 	font-size: 14px;
 	text-transform: uppercase;
-	border: 1px solid #e81f6b;
+	border: 1px solid #3399CC;
 	padding: 8px 12px;
 	transition: 0.8s all;
 }
 #about #sidebox .right a:hover
 {
 	color: #ffffff;
-	background: #e81f6b;
+	background: #3399CC;
 }
 #textsvideos
 {
@@ -563,6 +954,7 @@ header nav ul li ul li {
 	min-height: 135px;
 	margin-top: 20px;
 	text-align: center;
+	/*border-top: solid 1px black;*/
 }
 #Team .shape .section-header h1
 {
@@ -577,7 +969,7 @@ header nav ul li ul li {
 	font-size: 20px;
 }
 
-#Team .shape .section-header #tonton
+#Team .shape .section-header p .tonton
 {
 	color: #070808;
 	line-height: 2;
@@ -676,11 +1068,12 @@ header nav ul li ul li {
 }
 #Contact .shape .Form form
 {
-	margin-left: 205px;
+	margin-left: 18%;
 }
 #Contact .shape .Form form .inp
 {
 	margin-top: 5px;
+	margin-left: -3%;
 }
 #Contact .shape .Form form .inp input
 {
@@ -707,9 +1100,14 @@ header nav ul li ul li {
 	border: none;
 	border: 1px solid lightgray;
 }
+#Contact .shape .Form form .popo
+{
+	margin-left: -5%;
+
+}
 #Contact .shape .Form form .btn
 {
-	margin-left: 355px;
+	margin-left: 35%;
 	margin-top: 20px;
 }
 #Contact .shape .Form form .btn input
@@ -718,32 +1116,129 @@ header nav ul li ul li {
 	outline: none;
 	border: none;
 	padding: 15px 30px;
-	border: 0.2px solid #e81f6b;
+	border: 0.2px solid #3399CC;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	font-weight: bold;
-	background: #e81f6b;
+	background: #3399CC;
 	color: #fff;
 	border-radius: 1px;
 }
 #Contact .shape .Form form .btn input:hover
 {
 	background: #ecebe7;
-	color: #e81f6b;
+	color: #3399CC;
 	border: 1px solid #ecebe7;
 	border-radius: 1px;
 	cursor: pointer;
 }
+
+#signinform
+{
+	min-height: 700px;
+	background: #ffffff;
+}
+#signinform .shape .contact-header
+{
+	min-height: 110px;
+	margin-top: 15%;
+	text-align: center;
+}
+#signinform .shape .contact-header h1
+{
+	font-size: 48px;
+	color: #2d3134;
+	margin-bottom: -6px;
+}
+#signinform .shape .contact-header p
+{
+	color: #6c7279;
+	line-height: 1.4;
+}
+#signinform .shape .Form
+{
+	min-height: 440px;
+	margin-top: 4px;
+}
+#signinform .shape .Form form
+{
+	margin-left: 18%;
+}
+#signinform .shape .Form form .inp
+{
+	margin-top: 5px;
+	margin-left: -3%;
+}
+#signinform .shape .Form form .inp input
+{
+	width: 800px;
+	padding: 10px;
+	font-size: 15px;
+	color: #2d3134;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	outline: none;
+	background: none;
+	border: none;
+	border: 1px solid lightgray;
+}
+#signinform .shape .Form form .inp textarea
+{
+	width: 800px;
+	padding: 55px 16px;
+	font-size: 15px;
+	color: #2d3134;
+	margin-top: 8px;
+	outline: none;
+	background: none;
+	border: none;
+	border: 1px solid lightgray;
+}
+#signinform .shape .Form form .popo
+{
+	margin-left: -5%;
+
+}
+#signinform .shape .Form form .btn
+{
+	margin-left: 35%;
+	margin-top: 20px;
+}
+#signinform .shape .Form form .btn input
+{
+	background: none;
+	outline: none;
+	border: none;
+	padding: 15px 30px;
+	border: 0.2px solid #3399CC;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+	background: #3399CC;
+	color: #fff;
+	border-radius: 1px;
+}
+#signinform .shape .Form form .btn input:hover
+{
+	background: #ecebe7;
+	color: #3399CC;
+	border: 1px solid #ecebe7;
+	border-radius: 1px;
+	cursor: pointer;
+}
+
+
+
 #upgrade
 {
-	min-height: 450px;
+	min-height: 350px;
 	background: url("Images/Clothes.png") 0 -220px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 #upgrade .shape .upgrade-content
 {
-	height: 450px;
+	height: 350px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -759,16 +1254,17 @@ header nav ul li ul li {
 {
 	font-size: 30px;
 	text-transform: uppercase;
-	word-spacing: 6px;
-	letter-spacing: 6px;
+	word-spacing: 0.5px;
+	letter-spacing: 0.5px;
 	font-style: inherit;
 	margin-bottom: -2px;
+	margin-top: 40px;
 }
 #upgrade .shape .upgrade-content p
 {
 	font-weight: bold;
 	text-transform: capitalize;
-	font-size: 12px;
+	font-size: 18px;
 	word-spacing: 1px;
 	letter-spacing: 2px;
 	color: #fff;
@@ -778,8 +1274,8 @@ header nav ul li ul li {
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
-	border: 1px solid #e81f6b;
-	background: #e81f6b;
+	border: 1px solid #3399CC;
+	background: #3399CC;
 	padding: 13px 100px;
 	letter-spacing: 3px;
 	font-weight: bold;
@@ -789,7 +1285,7 @@ header nav ul li ul li {
 }
 #upgrade .shape .upgrade-content .anchor:hover
 {
-	color: #e81f6b;
+	color: #3399CC;
 	border: 1px solid #ecebe7;
 	background: #ecebe7;
 }
@@ -824,11 +1320,11 @@ header nav ul li ul li {
 }
 #upgrade .shape .upgrade-content ul li a i:hover
 {
-	color: #e81f6b;
+	color: #3399CC;
 }
 footer
 {
-	min-height: 400px;
+	min-height: 20px;
 	background: #232323;
 	color: #d2d3d5;
 	font-size: 14px;
@@ -855,7 +1351,7 @@ footer .shape .flex .flexbox h3
 {
 	font-weight: normal;
 	font-size: 18px;
-	color: #e81f6b;
+	color: #3399CC;
 	text-transform: uppercase;
 	word-spacing: 1px;
 	letter-spacing: 1px;
@@ -877,7 +1373,7 @@ footer .shape .flex .flexbox ul li a
 }
 footer .shape .flex .flexbox ul li a:hover
 {
-	color: #e81f6b;
+	color: #3399CC;
 }
 footer .shape .flex .flexbox ul li a:hover i
 {
@@ -886,13 +1382,13 @@ footer .shape .flex .flexbox ul li a:hover i
 }
 footer .shape .flex .flexbox ul li a i
 {
-	color: #e81f6b;
+	color: #3399CC;
 	font-size: 10px;
 	transition: 0.3s all;
 }
 footer .shape .flex .vrt
 {
-	border-left: 1px solid #e81f6b;
+	border-left: 1px solid #3399CC;
 	height: 200px;
 	margin-left: 30px;
 	margin-top: 65px;
@@ -907,7 +1403,7 @@ footer .shape .flex .flexbox  h4
 }
 footer .shape .flex .flexbox  h4 span
 {
-	color: #e81f6b;
+	color: #3399CC;
 }
 footer .shape .flex .flexbox form .email
 {
@@ -934,14 +1430,14 @@ footer .shape .flex .flexbox form .btn
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: #e81f6b;
+	color: #3399CC;
 	font-weight: bold;
 }
 footer .shape .flex .flexbox form .btn:hover
 {
 	color: #fff;
-	background: #e81f6b;
-	border: 1px solid #e81f6b;
+	background: #3399CC;
+	border: 1px solid #3399CC;
 	cursor: pointer;
 }
 footer .shape .flex .flexbox .UL .LI
@@ -964,13 +1460,20 @@ footer .shape .flex .flexbox .UL .LI .A .fa
 }
 footer .shape .flex .flexbox .UL .LI .A .fa:hover
 {
-	background: #e81f6b;
+	background: #3399CC;
 	color: #fff;
-	border: 1px solid #e81f6b;
+	border: 1px solid #3399CC;
 	transform: rotate(-360deg);
 }
 
 /* Slideshow container */
+  .yaya 
+    {
+		text-align: center;
+		font-size: 48px;
+		color: black;
+	}
+  
  .slideshow-container {
 	position: relative;
 	height:250px;
@@ -1042,4 +1545,287 @@ footer .shape .flex .flexbox .UL .LI .A .fa:hover
    q {font-style: italic;}
   
   /* Add a blue color to the author */
-   .author {color: #e81f6b;}
+   .author {color: #3399CC;}
+
+
+#Formationliste
+{
+	min-height: 850px;
+	background: #ffffff;
+}
+#Formationliste #Thrends
+{
+	min-height: 700px;
+	background: #ffffff;
+}
+#Formationliste #Thrends h1
+{
+	text-align: left;
+	color: #2d3134;
+	font-size: 35px;
+	/*border-bottom: 2px solid #08070a;*/
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+#Formationliste #Thrends p
+{
+	text-align: center;
+	color: #2d3134;
+	margin-top: -33px;
+}
+#Formationliste #Thrends .box
+{
+	float: left;
+	margin-left: 18px;
+	margin-top: 28px;
+	width: 380px;
+	height: 600px;
+	background: none;
+}
+#Formationliste #Thrends .box .middle
+{
+	width: 310px;
+	height: 310px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 24px;
+	border: 1px solid #d8d8d8;
+}
+#Formationliste #Thrends .box .titles
+{
+	width: 350px;
+	height: 180px;
+	margin-left: 14px;
+	text-align: center;
+}
+#Formationliste #Thrends .box .titles h3
+{
+	text-align: center;
+	padding-top: 4px;
+	font-size: 23px;
+	color: #3399CC;
+}
+#Formationliste #Thrends .box .titles p
+{
+	margin-top: 6px;
+	padding-bottom: 6px;
+	color: #2d3134;
+}
+#Formationliste #Thrends .box .titles a
+{
+	text-decoration: none;
+	color: #3399CC;
+	border: 1px solid #3399CC;
+	padding: 8px 14px;
+	transition: 0.5s all;
+}
+#Formationliste #Thrends .box .titles a:hover
+{
+	color: #fff;
+	background: #3399CC;
+}
+#Formationliste #Features
+{
+	min-height: 600px;
+	background: #ffffff;
+	margin-top: -20px;
+}
+#Formationliste #Features h1
+{
+	text-align: center;
+	line-height: 1.3;
+	font-size: 48px;
+	color: #2d3134;
+	margin-bottom: -10px;
+}
+#Formationliste #Features p
+{
+	text-align: center;
+	color: #2d3134;
+}
+#Formationliste #Features .bx
+{
+	float: left;
+	margin-left: 18px;
+	margin-top: 30px;
+	width: 380px;
+	height: 340px;
+	background: none;
+	/*border: 1px solid grey;*/
+}
+#Formationliste #Features .bx .fa
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 18px;
+	height: 50px;
+	width: 80px;
+	font-size: 40px;
+	background: #3399CC;
+	color: #ffffff;
+	margin-left: 132px;
+	border-radius: 2px;
+}
+#Formationliste #Features .bx .innerbx
+{
+	width: 350px;
+	height: 230px;
+	margin-left: 11px;
+	margin-top: 7px;
+	border: 4px solid #3399CC;
+	border-radius: 2px;
+}
+#Formationliste #Features .bx .innerbx h1
+{
+	font-size: 26px;
+	color: #2d3134;
+	margin-bottom: 10px;
+	margin-top: 60px;
+}
+#Formationliste #Features .bx .innerbx p
+{
+	color: #86898e;
+	line-height: 1.5;
+}
+
+/*CHATBOX*/
+#chatboxlist
+{
+	margin-top: 5%;
+	min-height: 500px;
+	background: #ffffff;
+}
+
+  #chatboxlist form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+   
+  #chatboxlist form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+   
+  #chatboxlist input {
+    font-family: "Lato";
+  }
+   
+  #chatboxlist a {
+    color: #0000ff;
+    text-decoration: none;
+  }
+   
+  #chatboxlist a:hover {
+    text-decoration: underline;
+  }
+   
+  #chatboxlist #wrapper, #chatboxlist
+  #loginform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+  }
+   
+  #chatboxlist #loginform {
+    padding-top: 18px;
+    text-align: center;
+  }
+   
+  #chatboxlist #loginform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+   
+  #chatboxlist #chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #fff;
+    height: 300px;
+    width: 530px;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+   
+  #chatboxlist #usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid black /*#ff9800*/;
+  }
+   
+  #chatboxlist #name {
+    border-radius: 4px;
+    border: 1px solid #3399CC;
+    padding: 2px 8px;
+  }
+   
+  #chatboxlist #submitmsg,#chatboxlist
+  #enter{
+    background: #3399CC;
+    border: 1px solid black /*#e65100*/;
+    color: white;
+    padding: 4px 11px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+   
+  #chatboxlist .error {
+    color: #ff0000;
+  }
+   
+  #chatboxlist #menu {
+    padding: 15px 25px;
+    display: flex;
+  }
+   
+  #chatboxlist #menu p.welcome {
+    flex: 1;
+  }
+   
+  #chatboxlist a#exit {
+    color: white;
+    background: #c62828;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+   
+  #chatboxlist .msgln {
+    margin: 0 0 5px 0;
+  }
+   
+  #chatboxlist .msgln span.left-info {
+    color: orangered;
+  }
+   
+  #chatboxlist .msgln span.chat-time {
+    color: #666;
+    font-size: 60%;
+    vertical-align: super;
+  }
+   
+  #chatboxlist .msgln b.user-name, .msgln b.user-name-left {
+    font-weight: bold;
+    background: #546e7a;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+   
+  #chatboxlist .msgln b.user-name-left {
+    background: #3399CC;
+  }

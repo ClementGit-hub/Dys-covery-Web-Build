@@ -1,0 +1,9 @@
+EPITECH
+Bordeaux : 16 rue Théodore Blanc 33520 Bruges
+La Réunion : 234 Chemin de la Pente 97440 Saint-André
+Lille : 5-9, rue du Palais Rihour 59000 Lille
+
+Ecole d'informatique
+Post BAC : bac+3 ; bac+5
+De 7 247€ à 9 293€
+Bordeaux / Réunion / Lille

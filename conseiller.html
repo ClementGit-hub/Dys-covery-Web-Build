@@ -8,11 +8,13 @@
 	<meta name="author" content="Yahya Qaddouri, Programmer and Developer">
 	<title>Dys-cover</title>
 	<link rel="stylesheet" type="text/css" href="Dyscovery.css">
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>-->
 </head>
 <body>
-	<section id="banner2">
+	<section id="bannerconseiller">
 		<header>
 			<div class="shape">
 				<div class="logo">
@@ -25,14 +27,15 @@
 						<li><a href="#">Nos Services</a>
 							<ul class="nav-has-dropdown">
 							  <li><a href="Formation.html">Formation</a></li>
-							  <li><a href="Logement.html">Logement</a></li>
-							  <li><a href="Aide.html">Aide Financières</a></li>
+							  <li><a href="#">Logement</a></li>
+							  <li><a href="#">Aide Financières</a></li>
 							</ul>
 						  </li> 
 						<!--<li><a href="#">Contacts</a></li>-->
-						<li><a href="#ancre-contact">Nous Contactez</a></li>
-						<li><a href="signin.php">Sign In</a></li>
+						<li><a href="#ancre-contact">Nous Contacter</a></li>
+						<li><a href="#">Sign Out</a></li>
 					</ul>
+                  </div>
 				</nav>
 			</div>
 		</header>
@@ -40,9 +43,9 @@
 			<div class="content">
 				<!-- <span id="Quote1"><q>Clothes mean nothing until someone lives in them</q></span>
 				<br>-->
-				<!--<span id="Quote2">Association DYS-Covery</span>
+				<span id="Quote3">Votre conseiller :</span>
 				<p>
-					</p>  <span id="desk">2019 Collection</span> -->
+					</p><span id="desk">Un conseiller reste à votre disposition pour répondre à toutes vos questions!</span>
 
 				<!--<form>
 					<input class="searchinp" type="search" placeholder="What are you looking for?">
@@ -52,37 +55,35 @@
 		</div>
 	</section>
        
-		 	<section id="Formationliste">
+	<section id="chatboxlist">
 		<div class="shape">
-			<article id="Thrends">
-				<h1 ><u>Liste des formations :</u></h1>
-				<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa<br>semper aliquam quis mattis quam.</p>-->
-				
-				<div class="box">
-					<img class="middle" src="blog/article 2/TroublesDeDys.jpg">
-					<div class="titles">
-						<h3>Quels sont les différents troubles de dys ?</h3>
-						<p>On regroupe sous “troubles Dys” les troubles cognitifs spécifiques et les troubles des apprentissages qu’ils induisent. Retrouvez toutes les informations utiles ici !</p>
-						<a href="https://www.ffdys.com/troubles-dys">More</a>
-					</div>
-				</div>
-				<div class="box">
-					<img class="middle" src="blog/article 1/illu.png">
-					<div class="titles">
-						<h3>Qu'est-ce que la dyslexie ?</h3>
-						<p>La dislexie touche 5 à 10% de la population mondiale, mais comment se manfiste-elle ?</p>
-						<a href="https://dysmoi.fr/la-dyslexie-qu-est-ce-que-c-est/">More</a>
-					</div>
-				</div>
-				<div class="box">
-					<img class="middle" src="blog/article 3/aide_emploi.jpg">
-					<div class="titles">
-						<h3>Comment aider un employé dyslexique ?</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-						<a href="https://www.kellyservices.ca/ca/services-aux-entreprises/centre-de-ressources-pour-les-entreprises/gestion-des-employes/comment-aider-un-employe-dyslexique/">More</a>
-					</div>
-				</div>
-			</article>
+			<div id="wrapper">
+                <div id="menu">
+                    <p class="welcome">Bienvenue, <b></b></p>
+                    <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+                </div>
+     
+                <div id="chatbox"></div>
+     
+                <form name="message" action="">
+                    <input name="usermsg" type="text" id="usermsg" />
+                    <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+                </form>
+            </div>
+            <script type="text/javascript">
+                // jQuery Document
+                $(document).ready(function () {});
+            </script>
+            <script type="text/javascript">
+                // jQuery Document
+                $(document).ready(function(){
+                    //If user wants to end session
+                    $("#exit").click(function(){
+                        var exit = confirm("Are you sure you want to end the session?");
+                        if(exit==true){window.location = 'index.html?logout=true';}      
+                    });
+                });
+            </script>
 		</div>
 	</section>
 	
@@ -92,7 +93,7 @@
 		<div id="ancre-contact" class="shape">
 			<div class="contact-header">
 				<h1 >Nous Contacter</h1>
-				<p>Tu as des questions pour nous ? N'hésite pas à nous envoyer un message, et on te répondra rapidement.</p>
+				<p>Tu as d'autres question qui demande plus de clarification ? N'hésite pas à nous envoyer un message, et on te répondra rapidement.</p>
 			</div>
 			<div class="Form">
 				<form>
